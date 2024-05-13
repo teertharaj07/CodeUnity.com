@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation {
+    margin-top: 25px;
+    font-family: var(--font1);
+    /* height: 74px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-left span {
+    font-size: 35px;
+    /* padding-top: 10px; */
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 77px;
+    font-size: 22px;
+    padding-bottom: 23px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font2);
+
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav-left ul li a:hover {
+    color: var(--main-bg-color);
+    font-weight: bolder;
+
+}
+
+
+
+.content {
+    height: 100%;
+    /* background-color: rgba(170, 170, 192, 0.546); */
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    padding: 9px;
+    position: relative;
+
+}
+
+
+.content::after {
+    content: "";
+    background-image: url('../img/home.jpg');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.content-left {
+    font-family: var(--font1);
+    /* width: 50%; */
+    padding: 50px;
+    z-index: 1;
+    /* this line used to stop the copy text */
+
+
+}
+
+.content-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+
+    height: 339px;
+    width: 344px;
+    background-position: center;
+    background-size: cover;
+    border: 7px solid black;
+    border-radius: 200px
+}
+
+.home-articles {
+    /* height: 455px; */
+    background-color: rgba(163, 91, 91, 0.354);
+    margin: auto;
+    margin-bottom: 12px;
+    margin-top: 23px;
+    position: relative;
+}
+.year-box{ 
+    position: absolute;
+    width: 150px;
+    height: 255px;
+    /* background-color: yellow; */
+    right: 10px;
+    top: 100px;
+}
+.year-box div{
+    margin: 12px 0;
+}
+
+.home-article {
+    display: flex;
+
+
+}
+
+.home-article img {
+    width: 300px;
+    padding: 50px;
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .home-articles{} */
+.footer {
+    height: 50px;
+    background-color: var(--main-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

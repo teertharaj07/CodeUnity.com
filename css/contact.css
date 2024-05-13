@@ -1,0 +1,26 @@
+.contact-content {
+    /* height: 395px; */
+    height: 100vh;
+    /* background-color: rgba(170, 170, 192, 0.546); */
+    display: flex;
+    align-items: center;
+    /* margin-top: 34px; */
+    padding: 9px;
+    /* position: relative; */
+
+}
+
+.contact-content::after {
+    content: "";
+    background-image: url('../img/home.jpg');
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    z-index: -1;
+    
+}
